@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Builders Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#payment">Payment</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <h1>Welcome to Builders Hub</h1>
+            <img src="1.jpg" alt="Builders Hub">
+            <div class="banner">
+                <img src="https://designthoughts.org/wp-content/uploads/2022/11/commercial-building-design-elevation-scaled.jpg" alt="Commercial Building Design">
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <h1>About Builders Hub</h1>
+            <p>Welcome to Builders Hub, your trusted partner in construction and renovation projects. Since 2024, we have been dedicated to delivering exceptional building solutions that turn your vision into reality.</p>
+            <p>At Builders Hub, our mission is to provide top-notch construction services, including residential, commercial, and industrial projects. Our team of experienced professionals is committed to excellence, ensuring that every project meets the highest standards of quality and safety.</p>
+            <p>Whether you're looking to build your dream home, renovate your office, or undertake a large-scale construction project, Builders Hub is here to guide you through every step of the process. With our expertise and attention to detail, you can trust us to build more than just structures—we build lasting relationships with our clients.</p>
+            <p>Join us at Builders Hub and experience the difference of working with a team that values craftsmanship, integrity, and customer satisfaction. Let’s build something great together!</p>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <h1>Contact Us</h1>
+            <p>Contact information goes here.</p>
+        </div>
+
+        <!-- Services Page -->
+        <div id="services" class="page">
+            <h1>Our Services</h1>
+            <p>Explore the range of services we offer, including:</p>
+            <ul>
+                <li>Residential Construction</li>
+                <li>Commercial Building</li>
+                <li>Renovations and Remodeling</li>
+                <li>Project Management</li>
+            </ul>
+            <p>Contact us to learn more about how we can assist with your next project.</p>
+        </div>
+
+        <!-- Payment Page -->
+        <div id="payment" class="page">
+            <h1>Payment Page</h1>
+            <p>Please enter your payment details below:</p>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name">Name on Card</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Payment</button>
+                </div>
+            </form>
+            <div id="loading" style="display:none;">Processing payment...</div>
+        </div>
+
+        <!-- Payment Success Page -->
+        <div id="payment-success" class="page">
+            <h1>Payment Successful</h1>
+            <p>Your payment has been processed successfully.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
